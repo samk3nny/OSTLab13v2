@@ -1,0 +1,32 @@
+{
+  "name": "hellonode",
+  "version": "0.0.0",
+  "description": "very first app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samk3nny/hellonode.git"
+  },
+  "keywords": [
+    "example",
+    "heroku",
+    "node"
+  ],
+  "author": "Sam Kenny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samk3nny/hellonode/issues"
+  },
+  "homepage": "https://github.com/samk3nny/hellonode",
+  "dependencies": {
+    "logfmt": "~0.18.1",
+    "express": "~3.4.7",
+    "ejs": "~0.8.5"
+  },
+  "engines": {
+    "node": "0.10.*"
+  }
+}

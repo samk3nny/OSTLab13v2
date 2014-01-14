@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title><%= title %></title>
+  <meta charset="utf-8">
+  <script src="scripts/menu.js"></script>
+  <link rel="stylesheet" href="public/style.css">  
+</head>
+<body>
+  <!-- The menu will be inserted here -->
+  <nav id="menu">
+  </nav>
+  
+  <h1><%= pages[0].page %></h1>
+  
+  <!-- Description and League table -->
+  <div id="container">
+    <div class="descr">
+      <span class="title">Premier League<br><time datetime="2013-12-20"> 20th December, 2013</time></span>
+      <br>
+      <span class="summary">Top 5 clubs in the English Premier League.  Top 3 places eligible for Champions 
+      League spots are highlighted.</span>
+    </div>
+  
+    <div class="pl-table">
+      <table>
+        <tr>
+          <th>Pos</th>
+          <th>Team</th>
+          <th>GD</th>
+          <th>Points</th>
+        </tr>
+        <tr class="top_3">
+          <td>1</td>
+          <td><img src="http://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/323px-Arsenal_FC.svg.png" height="32" width="32" alt="Arsenal"><a href="/club/<%= pages[0].page %>" title="More info on Arsenal" accesskey="a">Arsenal</a></td>
+          <td>16</td>
+          <td>35</td>        
+        </tr>
+        <tr class="top_3">
+          <td>2</td>
+          <td><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0GdZDY-wfRQb7hrFFHDfBWX3SmaVUeE-52oq79FLhAtjjwErA-w" height="32" width="32" alt="Liverpool"><a href="liverpool.html" title="More info on Liverpool" accesskey="l">Liverpool</a></td>
+          <td>21</td>
+          <td>33</td>
+        </tr>
+        <tr class="top_3">
+          <td>3</td>
+          <td><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSWgSjIIjLL6ZbKMHYwbbxg7XUgasjkKoVSRMhoKwaCevfK8OS-w" height="32" width="32" alt="Chelsea"><a href="chelsea.html" title="More info on Chelsea" accesskey="c">Chelsea</a></td>
+          <td>14</td>
+          <td>33</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvyhWgQ6PY_k1VMVda807dmM6exA2ewGpmgIeyKMddBhw8jGC3" height="32" width="32" alt="Man City"><a href="mancity.html" title="More info on Manchester City" accesskey="m">Manchester City</a></td>
+          <td>29</td>
+          <td>32</td>
+        </tr> 
+        <tr>
+          <td>5</td>
+          <td><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSni4N4mJG2X0hImRFxsh9Vb_plspE6SrrnWeK0gG_C2r1wM-D" height="32" width="32" alt="Everton"><a href="everton.html" title="More info on Everton" accesskey="e">Everton</a></td>
+          <td>26</td>
+          <td>30</td>
+        </tr>            
+      </table>
+    </div>
+  </div>
+
+  <div id="footer">
+    <p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+      <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" /></a>
+    </p>   
+  </div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+/* Set the default font */
+body {
+    font-family: Calibri, Helvetica, sans-serif;
+}
+
+/* Main menu */
+nav#menu {
+    margin: 0px 0px 30px 0px;
+}
+
+/* Force the menu to the top left */
+nav#menu ul {
+    display: inline;
+    left: 0px;
+}
+
+/* style each list item */
+nav#menu li {
+    float: left;
+    list-style-type: none;    
+    text-align: center;
+}
+
+/* style the text and links on the menu */
+nav#menu a {
+    display: block;
+    width: 80px;
+    text-decoration: none;
+    background-color: darkblue;
+    color: white;
+    padding: 0px 10px 0px 10px;
+}
+
+/* Change the background colour of the menu on hover */
+nav#main_nav a:hover {
+    background-color: blue;
+}
+
+/* Pad images so that the text is not flush against them */
+img {
+    padding: 0px 5px 0px 0px;
+}
+
+/* Format the home button consistently across all pages */
+img.home_button {
+    width: 10%;
+    height: 10%;
+}
+
+/* Master formatting for the table */
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+/* style for the top 3 clubs only */
+tr.top_3 {
+    background-color: #A3A3C2;
+    color: yellow;
+}
+
+/* the default row background color */
+tr {
+    background-color: #F0F5F5;
+}
+/* Default cell formatting */
+td {
+    border: 1px solid grey;
+    width: 250px;
+    padding: 2px;    
+}
+/* Every column except the 2nd column should use 10% of the total table width */
+/* Note that this does not work in older versions of IE, so all columns will have the same width */
+td:not(:nth-child(2)) {
+    width: 10%;
+    text-align: center;
+}
+/* Format the table header row contents */
+th {
+    border: 1px solid grey;
+    background-color: #009900;
+    color: white;
+}
+/* Format the title on the left hand side */
+span.title {
+    font-weight: bold;
+    font-size: 150%;
+}
+/* Format the main content on the left hand side */
+span.summary {
+    font-style: italic;
+    font-size: 95%;
+}
+/* Main container to position the text on the left and the table */
+div#container {
+    position: relative;
+}
+/* Create a "column" on the left hand side to hold descriptive text */
+div.descr {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+}
+/* Position the League table to the right of the above text */
+div.pl-table {
+    height: 200px;
+    width: 550px;
+    left: 302px;
+    position: absolute;
+}
+/* Position the Poll section below the descriptive text and League table */
+div#poll_container {
+    position: relative;
+    width: 722px;
+    background-color: #F0F5F5;
+    border: 1px solid grey;
+    padding: 0px 10px 10px 10px;
+}
+
+
+/* Format the email address field */
+input#email_address {
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #FFFF99;
+    width: 200px;
+}
+
+/* Format the Vote button and put it in the bottom right hand corner */
+input#voteButton {
+    margin-left: 90%;
+    position: relative;
+}
+/* Format the frist piece of text in the descriptive text */
+span.title_heading {
+    color: blue;
+    font-weight: bold;
+}
+/* Format the whole section of descriptive text */
+div.club_descr {
+    background-color: lightyellow;
+    border: 1px solid grey;
+    padding: 15px;
+}
+/* Format the return text under the table */
+div#footer{
+    margin: 15px 0px;
+    font-style: italic;
+    font-size: 80%;
+    border-top: 1px solid grey;
+    position: relative;
+    top: 300px;
+}
