@@ -6,7 +6,7 @@ app.use('/public', express.static(__dirname + '/public'));
 app.use('/scripts', express.static(__dirname + '/scripts'));
 
 app.locals({
-	title: 'Extended Express Example'
+	title: 'OSTLab13v2'
 });
 
 app.all('*', function(req, res, next) {
