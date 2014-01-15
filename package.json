@@ -1,14 +1,14 @@
 {
-  "name": "hellonode",
+  "name": "football",
   "version": "0.0.0",
-  "description": "very first app",
+  "description": "mock up of Premier League table",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/samk3nny/hellonode.git"
+    "url": "https://github.com/samk3nny/OSTLab13v2.git"
   },
   "keywords": [
     "example",
@@ -18,9 +18,9 @@
   "author": "Sam Kenny",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/samk3nny/hellonode/issues"
+    "url": "https://github.com/samk3nny/OSTLab13v2/issues"
   },
-  "homepage": "https://github.com/samk3nny/hellonode",
+  "homepage": "https://github.com/samk3nny/OSTLab13v2",
   "dependencies": {
     "logfmt": "~0.18.1",
     "express": "~3.4.7",
