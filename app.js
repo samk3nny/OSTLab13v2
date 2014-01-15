@@ -4,6 +4,8 @@ var app = express();
 
 app.use('/public', express.static(__dirname + '/public'));
 app.use('/scripts', express.static(__dirname + '/scripts'));
+app.use('/club/public', express.static(__dirname + '/public'));
+app.use('/club/scripts', express.static(__dirname + '/scripts'));
 
 app.locals({
 	title: 'OSTLab13v2'
@@ -28,25 +30,16 @@ app.get('/post/:slug', function(req, res, next) {
 	})
 });
 
-/**
-app.get('/club/:page', function(req, res) {
-	console.log('req: ' + req.params.page);
-	res.render(req.params.page, { page: req.params.page });
-});
-**/
 app.get('/club/:page', function(req, res) {
 	console.log('req: ' + req.params.page);
 	res.locals.pages.forEach(function(page) {
 	  if (req.params.page === page.page) {
-	    res.render(req.params.page, { page: page });
+	    //res.render(req.params.page, { page: page });
+	    res.render('club.ejs', { page: page });
 	  }
 	})
 });
 
-
-app.get('api/posts', function(req, res) {
-	res.json(res.locals.posts);
-});
 
 app.listen(3000);
 console.log('app is listening at localhost:3000');
